@@ -1,0 +1,144 @@
+
+JordanE@PORW-PC1BXBL6 MINGW64 ~
+$ cd c/git
+bash: cd: c/git: No such file or directory
+
+JordanE@PORW-PC1BXBL6 MINGW64 ~
+$ /c/git
+bash: /c/git: Is a directory
+
+JordanE@PORW-PC1BXBL6 MINGW64 ~
+$ cd /c/git
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git
+$ ls -la
+total 24
+drwxr-xr-x 1 JordanE 1049089 0 Oct 10 16:26 ./
+drwxr-xr-x 1 JordanE 1049089 0 Oct 11 12:30 ../
+drwxr-xr-x 1 JordanE 1049089 0 Oct 10 16:25 demo-resources-master/
+drwxr-xr-x 1 JordanE 1049089 0 Sep 29 17:14 first-test/
+drwxr-xr-x 1 JordanE 1049089 0 Sep 28 22:43 local-test/
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git
+$ cd demo-resources-master
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git/demo-resources-master
+$ ls -la
+total 45
+drwxr-xr-x 1 JordanE 1049089   0 Oct 10 16:25 ./
+drwxr-xr-x 1 JordanE 1049089   0 Oct 10 16:26 ../
+drwxr-xr-x 1 JordanE 1049089   0 Oct 10 16:25 .vscode/
+-rw-r--r-- 1 JordanE 1049089 100 Oct 10 19:43 README.md
+drwxr-xr-x 1 JordanE 1049089   0 Oct 10 16:25 src/
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git/demo-resources-master
+$ :
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git/demo-resources-master
+$ ls
+README.md  src/
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git/demo-resources-master
+$ hardcopy -h file.txt
+bash: hardcopy: command not found
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git/demo-resources-master
+$ screen -L -Logfile copyscreen.txt
+bash: screen: command not found
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git/demo-resources-master
+$ screen -version
+bash: screen: command not found
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git/demo-resources-master
+$
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git/demo-resources-master
+$ ls
+README.md  src/
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git/demo-resources-master
+$ uname -a > /c/git/screenoutput
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git/demo-resources-master
+$ cd ..
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git
+$ ls
+demo-resources-master/  first-test/  local-test/  screenoutput
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git
+$ cat screenoutput
+MINGW64_NT-10.0-19044 PORW-PC1BXBL6 3.3.5-341.x86_64 2022-07-08 09:41 UTC x86_64 Msys
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git
+$ git help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git
+$ uname -a > /c/git/screenoutput
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git
+$ cat screenoutput
+MINGW64_NT-10.0-19044 PORW-PC1BXBL6 3.3.5-341.x86_64 2022-07-08 09:41 UTC x86_64 Msys
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git
+$ git --version
+git version 2.37.3.windows.1
+
+JordanE@PORW-PC1BXBL6 MINGW64 /c/git
+$
+ls
+
+gh repo clone scm.eng.hmhco.com/heinemann/demo-resources  c8efd3c4660ee365b2522d6317615f6009c41b22
+
+b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABDYl6pkx7
+3VLXyikF2/3bM7AAAAEAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAIKlKL3jc32SXOmL0
+1Jio+wtRKr5d9N8r9CPktLjPqEJ7AAAAkJkEq/woDwrezB/USiomSXhDPRB7wYWx2txyQE
+tmOcfz91h3RqMFn3aeS2yFDN7UauKJiEL6Vwdx2OAv2Tl5rlGkDnb1drOxJu4z28mhXB6r
+nQvib/0OZPBEZKY+IpEIIGAIQVqmOxgmFXM1aa3ZH1P8PjUJDiMoCxH0nAu9aO6SbpukjG
+yiXwhyDUudn1JJSw==
